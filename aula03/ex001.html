@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Campo de Texto</title>
+</head>
+<body>
+    <h1>Verificação de Campo de Texto</h1>
+
+    <label for="texto">Campo de Texto:</label>
+    <input type="text" id="texto">
+
+    <button onclick="verificarCampo()">Verificar</button>
+
+    <script>
+        function verificarCampo() {
+            
+            var texto = document.getElementById("texto").value;
+
+            if (texto === "") {
+                alert("O campo necessita de estar preenchido");
+            } else {
+                console.log("O campo de texto está preenchido com: " + texto);
+            }
+        }
+    </script>
+</body>
+</html>
+
+</body>
+</html>

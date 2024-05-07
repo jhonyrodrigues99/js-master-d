@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX001</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserir e Mostrar Texto</title>
+    <style>
+        button {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Inserir e Mostrar Texto</h1>
+
+    <label for="texto">Texto:</label>
+    <input type="text" id="texto">
+<br> <br>
+    <button onclick="inserirTexto()">Inserir texto</button>
+    <button onclick="mostrarTexto()">Mostrar texto</button>
+
+    <script>
+        var textoArray = [];
+
+        function inserirTexto() {
+
+            var texto = document.getElementById("texto").value;
+
+            if (texto !== "") { 
+                textoArray.push(texto);
+                document.getElementById("texto").value = "";
+            }
+        }
+
+        function mostrarTexto() {
+            if (textoArray.length > 0) {
+                var mensagem = "";
+                for (var i = 0; i < textoArray.length; i++) {
+                    mensagem += " " + textoArray[i] + "\n";
+                }
+                alert(mensagem);
+            } else {
+                alert("Nenhum texto inserido ainda.");
+            }
+        }
+    </script>
+</body>
+</html>
+
+</body>
+</html>
