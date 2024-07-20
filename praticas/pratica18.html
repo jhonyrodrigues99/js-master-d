@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática 01</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Alerta de Redirecionamento</title>
+</head>
+<body>
+
+<script>
+    alert("Benvindo à Prática 18 onde vamos saber mais sobre definição de variáveis, sua visualização e aplicação de operadores em JavaScipt");
+
+    var nome = "Maria";
+    var cidade = "Lisboa";
+    var pais = "Portugal";
+    var anoNascimento = 1983;
+
+    console.log (nome, cidade, pais, anoNascimento)
+
+    var anoAtual = 2021;
+    var minhaIdade = anoAtual - anoNascimento;
+    console.log(minhaIdade);
+
+    var maiorIdade = minhaIdade >= 18;
+    console.log(minhaIdade >= 18);
+
+    if (maiorIdade) { console.log("É maior de idade!"); } else { var difIdade = 18 - minhaIdade; console.log("Ainda não é maior de idade. Faltam-lhe" + " " + difIdade + " " + "anos para ser maior de idade."); };
+
+    document.write(`Olá. O meu nome é ${nome}, vivo em ${pais}, na cidade de ${cidade}. Tenho ${minhaIdade} anos.`);
+</script>
+
+</body>
+</html>
+
+</body>
+</html>
